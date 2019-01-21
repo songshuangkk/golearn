@@ -1,7 +1,9 @@
 package main
 
 import (
+	_ "./matchers"
 	"./search"
+	"fmt"
 	"log"
 	"os"
 )
@@ -9,6 +11,7 @@ import (
 // init is called prior to main.
 func init() {
 	// Change the device for logging to stdout.
+	fmt.Println("Main init")
 	log.SetOutput(os.Stdout)
 }
 
