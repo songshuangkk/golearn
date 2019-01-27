@@ -13,6 +13,8 @@ func pointerCopy() {
 
 	// 由于使用的是一个指针，复制之后，两个数组的元素指向的都是同一个值
 	array1 = array2
+
+	fmt.Println(array1)
 }
 
 func main() {
